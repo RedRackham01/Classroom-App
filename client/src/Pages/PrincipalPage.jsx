@@ -4,7 +4,7 @@ import { Box, IconButton, Typography } from "@mui/material";
 import TeacherList from "./../components/TeacherList";
 import FlexBetween from "./../Layout/FlexBeteen";
 import { useSelector } from "react-redux";
-import ClassroomList from "../components/classroomList";
+import ClassroomList from "./../components/ClassroomList";
 import StudentList from "./../components/StudentList";
 
 const PrincipalPage = () => {
