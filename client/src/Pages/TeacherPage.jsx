@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 import { Box, IconButton, Typography, CircularProgress } from "@mui/material";
 import FlexBetween from "./../Layout/FlexBeteen";
 import { useSelector } from "react-redux";
-import ClassroomList from "../components/classroomList";
+import ClassroomList from "./../components/ClassroomList";
 import StudentList from "./../components/StudentList";
 import axios from "axios";
 
