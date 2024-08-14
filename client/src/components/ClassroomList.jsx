@@ -5,7 +5,7 @@ import { Modal } from "antd";
 import { useSelector } from "react-redux";
 import { Box, IconButton, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 import { Delete, Edit, Add } from "@mui/icons-material";
-import ClassroomForm from "./classroomForm";
+import ClassroomForm from "./ClassroomForm";
 import FlexBetween from "../Layout/FlexBeteen";
 
 const initialValues = {
