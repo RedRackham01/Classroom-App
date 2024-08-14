@@ -46,7 +46,7 @@ const StudentList = ({ studentRole }) => {
       name: student.name,
       email: student.email,
       password: student.password,
-      classroom: student.classroom.name || "",
+      classroom: (student.classroom && student.classroom.name ? student.classroom.name : ""),
     });
     setVisible(true);
   };
@@ -74,6 +74,7 @@ const StudentList = ({ studentRole }) => {
     setNewUserVisible(false);
     setFormValues(initialValues);
     setSelectedStudent(null);
+    getStudents();
   };
 
   return (
@@ -108,7 +109,7 @@ const StudentList = ({ studentRole }) => {
                   </TableCell>
                   <TableCell>{student.name}</TableCell>
                   <TableCell align="right">{student.email}</TableCell>
-                  <TableCell align="right">{student.classroom.name || "Not Assigned"}</TableCell>
+                  <TableCell align="right">{(student.classroom && student.classroom.name ? student.classroom.name : "Not Assigned")}</TableCell>
                   {!studentRole && (
                     <TableCell align="right">
                       <IconButton aria-label="edit" onClick={() => handleEdit(student)}>

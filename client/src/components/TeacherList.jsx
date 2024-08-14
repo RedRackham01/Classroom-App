@@ -46,7 +46,7 @@ const TeacherList = () => {
       name: teacher.name,
       email: teacher.email,
       password: teacher.password,
-      classroom: teacher.classroom.name || "",
+      classroom: teacher.classroom && teacher.classroom.name ? teacher.classroom.name : "",
     });
     setVisible(true);
   };
@@ -74,6 +74,7 @@ const TeacherList = () => {
     setNewUserVisible(false);
     setFormValues(initialValues);
     setSelectedTeacher(null);
+    getTeachers();
   };
 
   return (
@@ -108,7 +109,7 @@ const TeacherList = () => {
                   </TableCell>
                   <TableCell>{teacher.name}</TableCell>
                   <TableCell align="right">{teacher.email}</TableCell>
-                  <TableCell align="right">{teacher.classroom.name || "Not Assigned"}</TableCell>
+                  <TableCell align="right">{teacher.classroom && teacher.classroom.name ? teacher.classroom.name : "NotAssigned"}</TableCell>
                   <TableCell align="right">
                     <IconButton aria-label="edit" onClick={() => handleEdit(teacher)}>
                       <Edit />
