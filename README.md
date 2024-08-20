@@ -1,5 +1,5 @@
 # Classroom App
-TheBookNook is a responsive class management web app using MERN Stack. It features a Node.js backend for providing RESTful APIs and uses MongoDB for storage. This project has user authentication and authorization, JWT token authentication, and a polished ReactJS frontend using Material UI and ANT Design. It uses Formik for form management and YUP for validation of the data. The State Management is done by using ReduxJS and Redux Toolkit.
+Classroom is a responsive class management web app using MERN Stack. It features a Node.js backend for providing RESTful APIs and uses MongoDB for storage. This project has user authentication and authorization, JWT token authentication, and a polished ReactJS frontend using Material UI and ANT Design. It uses Formik for form management and YUP for validation of the data. The State Management is done by using ReduxJS and Redux Toolkit.
 
 # Features
 
